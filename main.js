@@ -6,7 +6,9 @@
         input.onkeyup = function() {
             if (event.which !== 8) {
                 showNum.innerHTML = count += 1;
-            }
+            }else if (event.which ==8 && count >=1){
+				showNum.innerHTML = count -= 1;
+			}
         }
     }
 
